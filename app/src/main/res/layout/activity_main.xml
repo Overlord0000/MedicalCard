@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingLeft="10dp"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/Card"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/levender"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/QR"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/user"
+
+            />
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <EditText
+                android:id="@+id/FullName"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:hint="Full Name"
+                android:paddingStart="8dp"
+                android:inputType="text"
+                android:background="@drawable/input_bg"
+                android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/EmergencyContact"
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:hint="Emergency Contact"
+            android:paddingStart="8dp"
+            android:inputType="phone"
+            android:background="@drawable/input_bg"
+            android:layout_marginBottom="5dp"
+            />
+            <EditText
+                android:id="@+id/Adddress"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:hint="Adddress"
+                android:paddingStart="8dp"
+                android:background="@drawable/input_bg"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/Gender"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:hint="Gender"
+                android:paddingStart="8dp"
+                android:background="@drawable/input_bg"
+                android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:id="@+id/BloodGroup"
+                    android:layout_width="170dp"
+                    android:layout_height="25dp"
+                    android:hint="BloodGroup"
+                    android:paddingStart="8dp"
+                    android:background="@drawable/input_bg"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/SaveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Save And Update"/>
+
+
+    <Button
+        android:id="@+id/generateAndExportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Generate And Export"/>
+
+
+    </LinearLayout>
+
